@@ -1,9 +1,9 @@
 import http from 'http';
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
 
-dotenv.config()
+dotenv.config();
 
-const port = process.env.PORT
+const port = process.env.PORT;
 
 const server = http.createServer((request, response) => {
     response.writeHead(200);
