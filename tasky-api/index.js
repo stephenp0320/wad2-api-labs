@@ -4,6 +4,7 @@ import tasksRouter from './api/tasks';
 import './db';
 import cors from 'cors';
 import usersRouter from './api/users';
+import authenticate from './authenticate';
 
 
 dotenv.config();
@@ -30,6 +31,7 @@ app.use(errHandler);
 
 app.use('/api/users', usersRouter);
 
+app.use('/api/tasks', authenticate, tasksRouter);
 
 app.listen(port, () => {
   console.info(`Server running at ${port}`);
