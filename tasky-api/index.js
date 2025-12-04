@@ -9,7 +9,7 @@ import authenticate from './authenticate';
 
 dotenv.config();
 
-const errHandler = (err, req, res, next) => {
+const errHandler = (err, req, res) => {
   if(process.env.NODE_ENV === 'production') {
     return res.status(500).send(`Something went wrong!`);
   }
