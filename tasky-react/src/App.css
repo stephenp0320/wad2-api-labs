@@ -1,0 +1,143 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+div {
+  padding: 20px;
+}
+
+.container{
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  font-family: system-ui;
+  background: #5bb4c4;
+  color: white;
+  text-align: center;
+  width: 180px;
+  height: 240px;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em; 
+}
+
+.description {
+  margin-top: 6px;
+  font-style: italic;
+  color: #555;
+  line-height: 1.4;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 6px;
+  width: 50px;
+  height: 25px;
+}
+
+.doneButton {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: green;
+}
+
+
+.deleteButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: red;
+}
+
+input[type=text], input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+form {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: inherit;
+  font-size: 1em;
+  color: #333;
+  appearance: none; /* removes default browser arrow */
+}
+
+
+.priority {
+  font-weight: bold;
+  padding: 4px 50px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.priority.low {
+  background-color: green;
+}
+
+.priority.medium {
+  background-color: orange;
+}
+
+.priority.high {
+  background-color: red;
+}
